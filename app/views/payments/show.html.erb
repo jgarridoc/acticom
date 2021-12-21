@@ -6,7 +6,7 @@
 </p>
 
 <p>
-  <strong>Saldo acum:</strong>
+  <strong>Saldo acumulado:</strong>
   <%= @payment.saldo_acum %>
 </p>
 
@@ -26,7 +26,7 @@
 </p>
 
 <p>
-  <strong>Profile:</strong>
+  <strong>Perfil:</strong>
   <%= @payment.profile_id %>
 </p>
 
@@ -41,9 +41,9 @@
 </p>
 
 <p>
-  <strong>Anio:</strong>
+  <strong>Año:</strong>
   <%= @payment.anio %>
 </p>
 
-<%= link_to 'Edit', edit_payment_path(@payment) %> |
-<%= link_to 'Back', payments_path %>
+<%= link_to 'Editar', edit_payment_path(@payment) %> |
+<%= link_to 'Volver', payments_path %>

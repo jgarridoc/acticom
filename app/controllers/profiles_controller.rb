@@ -19,6 +19,7 @@ class ProfilesController < ApplicationController
 
   # GET /profiles/1/edit
   def edit
+    @users = User.all
   end
 
   # POST /profiles or /profiles.json

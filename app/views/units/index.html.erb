@@ -31,7 +31,7 @@
         <td><%= unit.zip_code %></td>
         <td><%= link_to 'Ver', unit %></td>
         <td><%= link_to 'Editar', edit_unit_path(unit) %></td>
-        <td><%= link_to 'Eliminar', unit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Eliminar', unit, method: :delete, data: { confirm: '¿Está segur@?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -39,4 +39,4 @@
 </div>
 <br>
 
-<%= link_to 'New Unit', new_unit_path %>
+<%= link_to 'Nueva unidad', new_unit_path %>

@@ -19,6 +19,7 @@ class PaymentsController < ApplicationController
 
   # GET /payments/1/edit
   def edit
+    @profiles = Profile.all
   end
 
   # POST /payments or /payments.json

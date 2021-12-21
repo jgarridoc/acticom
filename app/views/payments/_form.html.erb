@@ -3,7 +3,7 @@
 <%= form_with(model: payment) do |form| %>
   <% if payment.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(payment.errors.count, "error") %> prohibited this payment from being saved:</h2>
+      <h2><%= pluralize(payment.errors.count, "error") %> Este pago no pudo ser guardado:</h2>
 
       <ul>
         <% payment.errors.each do |error| %>

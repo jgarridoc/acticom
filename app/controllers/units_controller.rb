@@ -19,6 +19,7 @@ class UnitsController < ApplicationController
 
   # GET /units/1/edit
   def edit
+    @profiles=Profile.all
   end
 
   # POST /units or /units.json
