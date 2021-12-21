@@ -14,6 +14,7 @@ class UnitsController < ApplicationController
   # GET /units/new
   def new
     @unit = Unit.new
+    @profiles=Profile.all
   end
 
   # GET /units/1/edit

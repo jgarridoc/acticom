@@ -1,19 +1,19 @@
-<h2>Sign up</h2>
+<h2>Inscribirse</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="form-floating">
-    <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "correo" %>
+    <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Correo" %>
     <%= f.label :email, "Correo" %>
   </div>
 
   <div class="form-floating">
     
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em>(<%= @minimum_password_length %> Caracteres minimos)</em>
     <% end %><br />
-    <%= f.password_field :password, class: "form-control", placeholder: "contraseña" %>
+    <%= f.password_field :password, class: "form-control", placeholder: "Contraseña" %>
     <%= f.label :password, "Contraseña" %>
   </div>
 
