@@ -7,11 +7,11 @@
     <tr>
       <th scope="col">Rut</th>
       <th scope="col">Nombre</th>
-      <th scope="col">Apellido1</th>
-      <th scope="col">Apellido2</th>
+      <th scope="col">Apellido Paterno</th>
+      <th scope="col">Apellido Materno</th>
       <th scope="col">Telefono</th>
       <th scope="col">Cuota</th>
-      <th scope="col">User</th>
+      <th scope="col">Usuario</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -25,7 +25,7 @@
         <td><%= profile.apellido2 %></td>
         <td><%= profile.telefono %></td>
         <td><%= profile.cuota %></td>
-        <td><%= profile.user_id %></td>
+        <td><%= profile.user.email %></td>
         <td><%= link_to 'Ver', profile %></td>
         <td><%= link_to 'Editar', edit_profile_path(profile) %></td>
         <td><%= link_to 'Eliminar', profile, method: :delete, data: { confirm: '¿Está segur@?' } %></td>

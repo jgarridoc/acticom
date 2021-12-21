@@ -7,7 +7,7 @@
   <thead>
     <tr>
       <th scope="col">Tipo</th>
-      <th scope="col">Profile</th>
+      <th scope="col">Vecino</th>
       <th scope="col">Nombre calle</th>
       <th scope="col">Numero calle</th>
       <th scope="col">Comuna</th>
@@ -22,7 +22,7 @@
     <% @units.each do |unit| %>
       <tr>
         <td><%= unit.tipo %></td>
-        <td><%= unit.profile_id %></td>
+        <td><%= unit.profile.nombre %></td>
         <td><%= unit.nombre_calle %></td>
         <td><%= unit.numero_calle %></td>
         <td><%= unit.comuna %></td>
