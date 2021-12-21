@@ -46,7 +46,7 @@
   <div class="row g-3">
   <div class="col-sm-6">
     <%= form.label :profile_id, class: "form-label" %>
-        <%= form.select :profile_id, @profiles.map {|p|[p.nombre,p.id] }, prompt: "Seleccione una opción...", class: "form-select" %>
+        <%= form.select :profile_id, @profiles.map {|p|[p.id] }, prompt: "Seleccione una opción...", class: "form-select" %>
   </div>
 
   <div class="row g-3">
