@@ -64,20 +64,13 @@
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2"></h1>
         <div class="btn-toolbar mb-2 mb-md-0">
-          <p>Hola <strong><%= current_user.email %></strong> </p>
-          <br>
-          <p><%= link_to ' Editar usuario', edit_user_registration_path, :class => 'navbar-link' %></p>
+        <% if user_signed_in? %>
+          <p> Hola <strong><%= current_user.email %></strong>.</p><%= link_to 'Editar usuario', edit_user_registration_path, :class => 'navbar-link' %>
+        <% end %>
         </div>
       </div>
 
-      <% if user_signed_in? %>
       
-      
-      
-    <% else %>
-    
-    <% end %>
-
     <%= yield %> 
 
 
